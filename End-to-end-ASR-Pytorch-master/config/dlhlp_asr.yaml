@@ -52,7 +52,7 @@ model:                                     # Model architecture
     sample_rate: [1,1]
     sample_style: 'drop'                   # 'drop'/'concat'
   attention:
-    mode: 'dot'                            # 'dot'/'loc'
+    mode: 'loc'                            # 'dot'/'loc'
     dim: 300
     num_head: 1
     v_proj: False                          # if False and num_head>1, encoder state will be duplicated for each head
@@ -60,7 +60,7 @@ model:                                     # Model architecture
     loc_kernel_size: 100                   # just for mode=='loc'
     loc_kernel_num: 10                     # just for mode=='loc'
   decoder:
-    module: 'Transformer'                         # 'LSTM'/'GRU'/'Transformer'
+    module: 'LSTM'                         # 'LSTM'/'GRU'/'Transformer'
     dim: 512
     layer: 1
     dropout: 0
