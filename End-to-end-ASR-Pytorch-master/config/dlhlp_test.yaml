@@ -9,13 +9,13 @@ data:
     batch_size: 1
 src:
   config: '/work/b07u1234/b06502162/HW1/model2/HW1/End-to-end-ASR-Pytorch-master/config/dlhlp_asr.yaml'
-  ckpt: '/work/b07u1234/b06502162/HW1/model2/ckpt/only_GRU/hw1_best_att_dev.pth'
+  ckpt: '/work/b07u1234/b06502162/HW1/model2/ckpt/only_GRU/best_att_dev.pth'
 
 decode:
   beam_size: 1
   min_len_ratio: 0.01
   max_len_ratio: 0.30
-  lm_path: '/work/b07u1234/b06502162/HW1/model2/ckpt/only_GRU/hw1_best_att_dev.pth'
+  lm_path: '/work/b07u1234/b06502162/HW1/model2/ckpt/only_GRU/best_att_dev.pth'
   lm_config: 'config/dlhlp_lm.yaml'
   lm_weight: 0.7
   ctc_weight: 0
